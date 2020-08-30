@@ -1,0 +1,16 @@
+---
+- name: Allow http in firewalld
+  firewalld:  
+    service: "{{ item }}"
+    permanent: yes
+    state: enabled
+  with_items:
+    - http
+  notify: Reload firewalld
+
+- name: Set SELinux to permissive for session
+  command: setenforce 0
+
+- name: Disable SELinux
+  selinux:
+    state: disabled

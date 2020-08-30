@@ -1,0 +1,48 @@
+---
+- name: Change root user password
+  mysql_user: 
+    login_user: root
+    login_password: ""
+    name: root
+    password: "{{ sql_root_passwd }}"
+    priv: "*.*:ALL,GRANT"
+    host_all: yes
+  ignore_errors: true
+
+- name: Ensure all anonymous mysql users are deleted
+  mysql_user:
+    login_user: root
+    login_password: "{{ sql_root_passwd }}"
+    name: ''
+    host_all: yes
+    state: absent
+
+- name: Ensure the mysql test database is deleted
+  mysql_db:
+    login_user: root
+    login_password: "{{ sql_root_passwd }}"
+    name: test
+    state: absent
+
+
+- name: Set PHP time zone
+  lineinfile:
+    path: /etc/opt/rh/rh-php72/php.d/50-centreon.ini
+    line: date.timezone = Europe/Paris
+  notify: Restart rh-php72-php-fpm
+
+- name: Start & Enable all services
+  systemd:
+    name: "{{ item }}"
+    enabled: yes
+  with_items:
+    - rh-php72-php-fpm
+    - mariadb
+    - centreon
+    - cbd
+    - centengine
+    - gorgoned
+    - snmptrapd
+    - centreontrapd
+    - snmpd
+  notify: Restart httpd
