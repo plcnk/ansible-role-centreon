@@ -1,0 +1,9 @@
+---
+- name: Set permissions for firewalld and SELinux
+  include_tasks: permissions.yml
+
+- name: Install required packages
+  include_tasks: install.yml
+
+- name: Configure Centreon
+  include_tasks: centreon.yml

@@ -1,0 +1,23 @@
+---
+- name: Install repos
+  yum:
+    name:
+      - epel-release
+      - centos-release-scl
+      - http://yum.centreon.com/standard/20.04/el7/stable/noarch/RPMS/centreon-release-20.04-1.el7.centos.noarch.rpm
+    state: present
+
+- name: Install packages
+  yum:
+    name:
+      - centreon
+      - centreon-database
+      - python-pip
+      - libselinux-python
+  notify: Restart mariadb
+
+- meta: flush_handlers
+
+- name: Install MySQL connector
+  pip:
+    name: pymysql
