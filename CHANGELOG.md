@@ -2,6 +2,13 @@
 
 All changes will be documented in this file.
 
+## 0.1.2 (August 30, 2020)
+
+### Changed
+
+- Edited role description.
+- Edited [README.md](https://gitlab.com/plcnk-public/ansible/centreon/-/blob/master/README.md).
+
 ## 0.1.1 (August 30, 2020)
 
 ### Changed
@@ -14,7 +21,7 @@ All changes will be documented in this file.
 
 ### Removed
 
-- Removed unnecessary `setenforce 0` command task in [tasks/permissions](https://gitlab.com/plcnk-public/ansible/centreon/-/blob/master/tasks/permissions.yml) as it is already done with the `selinux` module.
+- Removed unnecessary `setenforce 0` command task in [tasks/permissions.yml](https://gitlab.com/plcnk-public/ansible/centreon/-/blob/master/tasks/permissions.yml) as it is already done with the `selinux` module.
 
 ## 0.1 (August 30, 2020)
 
