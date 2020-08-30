@@ -2,6 +2,20 @@
 
 All changes will be documented in this file.
 
+## 0.1.1 (August 30, 2020)
+
+### Changed
+
+- Changed role name and author for Ansible Galaxy.
+
+### Fixed
+
+- Removed trailing whitespaces.
+
+### Removed
+
+- Removed unnecessary `setenforce 0` command task in [tasks/permissions](https://gitlab.com/plcnk-public/ansible/centreon/-/blob/master/tasks/permissions.yml) as it is already done with the `selinux` module.
+
 ## 0.1 (August 30, 2020)
 
 ### Added

@@ -1,6 +1,6 @@
 ---
 - name: Change root user password
-  mysql_user: 
+  mysql_user:
     login_user: root
     login_password: ""
     name: root
@@ -23,7 +23,6 @@
     login_password: "{{ sql_root_passwd }}"
     name: test
     state: absent
-
 
 - name: Set PHP time zone
   lineinfile:
