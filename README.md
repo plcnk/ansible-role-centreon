@@ -1,7 +1,7 @@
 Centreon Ansible role
 =========
 
-An Ansible role to install Centreon on a virtual machine.
+An Ansible role to install Centreon (Central server) on a virtual machine.
 
 **Important**: This role may need a system restart as the SELinux configuration will be changed.
 
@@ -37,12 +37,20 @@ This role has been tested for the following operating systems:
 
 - CentOS 7.8
 
+Additional Information
+----------------------
+
+Once the playbook has finished its execution, you can now:
+
+- Reboot your system (recommended).
+- Go to [this link](https://docs.centreon.com/20.04/en/installation/web-and-post-installation.html) and follow the post installation instructions.
+
 Links
--------
+-----
 
 - Centreon: <https://www.centreon.com/>
 
 License
 -------
 
-BSD 3-Clause.
+BSD 3-Clause
