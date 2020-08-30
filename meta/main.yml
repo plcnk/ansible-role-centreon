@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: Centreon
   author: plcnk
-  description: An Ansible role to install Centreon on a virtual machine.
+  description: An Ansible role to install Centreon (Central server) on a virtual machine.
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
