@@ -1,4 +1,9 @@
 ---
+- name: Install firewalld
+  yum:
+    name: firewalld
+    state: present
+
 - name: Allow http in firewalld
   firewalld:
     service: "{{ item }}"
