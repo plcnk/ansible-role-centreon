@@ -1,7 +1,9 @@
 ---
 - name: Install firewalld
   yum:
-    name: firewalld
+    name:
+      - firewalld
+      - policycoreutils-python
     state: present
 
 - name: Allow http in firewalld
