@@ -2,6 +2,16 @@
 
 All changes will be documented in this file.
 
+## 1.0.0 (TBA)
+
+### Added
+
+- Added playbook testing with Molecule and Travis CI.
+
+### Fixed
+
+- Fixed yamllint errors.
+
 ## 0.1.2 (August 30, 2020)
 
 ### Changed
