@@ -8,6 +8,10 @@ All changes will be documented in this file.
 
 - Added playbook testing with Molecule and Travis CI.
 
+### Changed
+
+- Edited `README.md` to add badges.
+
 ### Fixed
 
 - Fixed yamllint errors.
