@@ -9,8 +9,7 @@ lint: |
   ansible-lint
 platforms:
   - name: instance
-    # image: "${distribution}:${version}"
-    image: geerlingguy/docker-centos7-ansible
+    image: "${distribution}:${version}"
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true
