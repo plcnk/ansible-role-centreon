@@ -1,6 +1,8 @@
 Centreon Ansible role
 =========
 
+[![Build Status](https://travis-ci.org/plcnk/ansible-role-centreon.svg?branch=master)](https://travis-ci.org/plcnk/ansible-role-centreon) [![Build Status](https://img.shields.io/badge/galaxy-plcnk.centreon-blueviolet)](https://galaxy.ansible.com/plcnk/centreon) [![GitHub](https://img.shields.io/github/license/plcnk/ansible-role-centreon)](https://github.com/plcnk/ansible-role-centreon/blob/master/LICENSE)
+
 An Ansible role to install Centreon (Central server) on a virtual machine.
 
 **Important**: This role may need a system restart as the SELinux configuration will be changed.
@@ -49,8 +51,3 @@ Links
 -----
 
 - Centreon: <https://www.centreon.com/>
-
-License
--------
-
-BSD 3-Clause
