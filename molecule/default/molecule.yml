@@ -10,7 +10,7 @@ lint: |
 platforms:
   - name: instance
     # image: "${distribution}:${version}"
-    image: geerlingguy/docker-centos7-ansible
+    image: "geerlingguy/docker-${DISTRO}-ansible:latest"
     command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
