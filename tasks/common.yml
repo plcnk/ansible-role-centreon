@@ -1,3 +1,4 @@
+---
 - name: Install repos and dependencies
   yum:
     name:
@@ -18,7 +19,7 @@
     - http
   notify: Reload firewalld
 
-- name: Disable SELinux 
+- name: Disable SELinux
   selinux:
     state: disabled
 
