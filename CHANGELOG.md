@@ -2,6 +2,13 @@
 
 All changes will be documented in this file.
 
+## 1.0.1 (September 01, 2020)
+
+### Changed
+
+- Changed `LICENSE` to **MIT**.
+- Changed Issue Tracker URL in [meta/main.yml](https://github.com/plcnk/ansible-role-centreon/blob/master/meta/main.yml) to the GitHub repository.
+
 ## 1.0.0 (September 01, 2020)
 
 ### Added
