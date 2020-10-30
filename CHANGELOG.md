@@ -2,6 +2,12 @@
 
 All changes will be documented in this file.
 
+## 1.0.2 (October 30, 2020)
+
+### Fixed
+
+- Specified the Docker driver while installing Molecule to fix broken pipelines
+
 ## 1.0.1 (September 01, 2020)
 
 ### Changed
