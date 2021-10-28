@@ -1,4 +1,4 @@
-Centreon Ansible role
+[ARCHIVE] Centreon Ansible role
 =========
 
 [![Galaxy](https://img.shields.io/badge/galaxy-plcnk.centreon-blueviolet)](https://galaxy.ansible.com/plcnk/centreon) [![GitHub](https://img.shields.io/github/license/plcnk/ansible-role-centreon)](https://github.com/plcnk/ansible-role-centreon/blob/master/LICENSE)
